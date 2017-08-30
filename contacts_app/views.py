@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def get_contacts(request):
-    return render(request, "ModelTest/index.html",
+    return render(request, "index.html",
                   {'contact_list': Contact.objects.all()})
 
 
